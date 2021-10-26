@@ -1,0 +1,30 @@
+.dice-section {
+  text-align: center;
+  display: inline-block;
+  margin: 30px;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  background: #4b5cb6;
+  border-radius: 45px;
+  color: #ffff;
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  margin: 30px;
+}
