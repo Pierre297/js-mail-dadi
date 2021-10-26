@@ -1,22 +1,24 @@
 // Chiedi all’utente la sua email,
 const userMail = prompt("Qual è la tua Email?");
+const guessList = document.getElementById("guess-list");
 
 // whitelist
 const whiteList = ["pincopallo@gmail.com", "tpatsyg@mobii.site", "gatmanry@caraparcal.com", "datanu.gh@cuenmex.com", "dyoussaf.mokafih4@hearkn.com", "ztomino.belloukl@hacktoy.com"]
 
 // controlla che sia nella lista
-for( let i = 1; i = whiteList; i++){
-    if (i = userMail){
+for( let i = 0; i <= whiteList.length; i++){
+    if (whiteList[i] === userMail){
 
-        console.log("l'utente è parte della lista.")
+        guessList.innerHTML = `${userMail} è nella lista degli invitati.`;
 
     }else {
 
-        console.log("l'utente non è parte della lista.")
+        guessList.innerHTML = `${userMail} non è nella lista degli invitati.`;
+
 
     }
-}
+};
 
  
-//  stampa un messaggio appropriato sull’esito del controllo.
+
 
