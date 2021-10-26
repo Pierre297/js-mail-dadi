@@ -3,7 +3,7 @@
 const rollDice = document.getElementById("btn")
 const firstElement = document.getElementById("resoult-player")
 const secondElement = document.getElementById("resoult-pc")
-const winner = document.getElementById("")
+const gameWinner = document.getElementById("winner")
 
 
 rollDice.addEventListener('click',
@@ -15,6 +15,14 @@ function(){
     firstElement.innerHTML = dice1;
     secondElement.innerHTML = dice2;
     
+    if(dice1 === dice2){
+        gameWinner.innerHTML = "Siete Pari!";
+    }else if(dice1 > dice2){
+        gameWinner.innerHTML = "Hai vinto!";
+    }else {
+        gameWinner.innerHTML = "Ha vinto il computer!";
+    };
 }
 
 );
+
