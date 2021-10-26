@@ -20,11 +20,12 @@ img {
   width: 100%;
 }
 
-.btn {
+#btn {
   background: #4b5cb6;
   border-radius: 45px;
   color: #ffff;
   font-size: 15px;
   padding: 10px 15px 10px 15px;
   margin: 30px;
+  cursor: pointer;
 }
